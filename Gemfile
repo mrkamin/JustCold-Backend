@@ -64,11 +64,7 @@ group :development do
   # gem "spring"
 end
 
-group :test do
-  # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
-  gem "capybara"
-  gem "selenium-webdriver"
-  gem "webdrivers"
-end
-
-gem "devise", "~> 4.9"
+gem 'devise', '~> 4.9', '>= 4.9.2'
+gem 'cloudinary'
+gem 'cancancan'
+gem 'ffi', '~> 1.15.0'

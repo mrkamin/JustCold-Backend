@@ -9,6 +9,7 @@ class CreateProducts < ActiveRecord::Migration[7.0]
       t.string :fans_species
       t.string :condition
       t.string :application_fields
+      t.string :photo
 
       t.timestamps
     end
