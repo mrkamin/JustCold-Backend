@@ -1,0 +1,47 @@
+<div id="<%= dom_id product %>">
+  <p>
+    <strong>Name:</strong>
+    <%= product.name %>
+  </p>
+
+  <p>
+    <strong>Price:</strong>
+    <%= product.price %>
+  </p>
+
+  <p>
+    <strong>Type:</strong>
+    <%= product.type %>
+  </p>
+
+  <p>
+    <strong>Certification:</strong>
+    <%= product.certification %>
+  </p>
+
+  <p>
+    <strong>Noise level:</strong>
+    <%= product.noise_level %>
+  </p>
+
+  <p>
+    <strong>Fans species:</strong>
+    <%= product.fans_species %>
+  </p>
+
+  <p>
+    <strong>Condition:</strong>
+    <%= product.condition %>
+  </p>
+
+  <p>
+    <strong>Photo:</strong>
+    <%= link_to product.photo.filename, product.photo if product.photo.attached? %>
+  </p>
+
+  <p>
+    <strong>Application fields:</strong>
+    <%= product.application_fields %>
+  </p>
+
+</div>
